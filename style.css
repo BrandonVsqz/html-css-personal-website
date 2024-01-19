@@ -1,0 +1,256 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* flexbox */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-items {
+    text-align: center;
+}
+
+/* hero */
+
+.hero {
+    height: 750px;
+    background-color: #F5EFE7;
+    /*background-color: #7895B2;*/
+    background-image: url(./images/city.png);
+}
+
+h1 {
+    font-family: "IM Fell English FC", serif;
+    font-size: 100px;
+}
+
+span {
+    animation-name: color;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    from {color: black;}
+    to {color: red;}
+}
+
+/* intro */
+
+.intro {
+    padding-bottom: 20px;
+    background-color: #D8C4B6;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.intro > p {
+    margin: 0;
+}
+
+#portrait {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: solid black 5px;
+    margin-top: 20px;
+}
+
+#three-words {
+    margin-bottom: 20px;
+}
+
+/* resume */
+
+.resume {
+    background-color: #F5EFE7;
+}
+
+.resume-item {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 25px;
+}
+
+.resume-item > p li {
+    margin: 10px;
+}
+
+.underline {
+    width: 100px;
+}
+
+#skills {
+    margin-top: 50px;
+}
+
+.award-list, .experience-list {
+    font-size: 20px;
+}
+
+.experience-list > li {
+    padding-bottom: 10px;
+}
+
+.award-list > li {
+    padding-bottom: 10px;
+}
+
+#horizontal-rule {
+    background-color: #F5EFE7;
+    padding: 50px 50px;
+}
+
+#horizontal-rule > * { 
+    background-color: #F5EFE7;
+    border: dotted black 6px;
+    border-bottom: none;
+    width: 40px;
+}
+
+/* about me */
+
+.about-me {
+    background-color: #F5EFE7;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
+}
+
+#about-me-heading {
+    margin-bottom: 50px;
+}
+
+.about-item {
+    width: 500px;
+    height: 500px;
+}
+
+.about-item > p {
+    margin: 10px 25px 10px 25px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border: solid 5px black;
+}
+
+/* contact me */
+
+.contact-me {
+    background-color: #675D50;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.contact-list > li {
+    display: inline-block;
+}
+
+button {
+    height: 45px;
+    width: 400px;
+    font-family: "IM Fell English FC", serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 2px black;
+    margin: 40px 10px 25px 10px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
+}
+
+button:hover {
+    background-color:#F5EFE7;
+    color: blue;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* general */
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+h2 {
+    font-family: oswald, sans-serif;
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "IM Fell English FC", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* media query */
+
+@media screen and (max-width: 1268px) {
+    button {
+        width: 260px;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .intro > p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        height: 210vh;
+    }
+
+    .about-me {
+        justify-content: center;
+    }
+
+    .about-item {
+        width: 400px;
+        margin-bottom: 25px;
+    }
+
+    .contact-me {
+        height: 60vh;
+    }
+
+    button {
+        width: 300px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .contact-list > li {
+        display: block;
+    }
+}
