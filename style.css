@@ -254,3 +254,19 @@ h3 {
         display: block;
     }
 }
+
+/* mobile devices */
+
+@media screen and (max-width: 577px) {
+    .hero > h1 {
+        font-size: 80px;
+    }
+
+    .about-container {
+        height: 260vh;
+    }
+
+    .contact-me {
+        height: 70vh;
+    }
+}
